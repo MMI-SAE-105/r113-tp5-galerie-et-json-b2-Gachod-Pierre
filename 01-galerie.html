@@ -18,5 +18,11 @@
     @keyup.escape.window="displayedImage = null">
         <figure><img :src="displayedImage" alt="image 237... un chiot"></figure>
     </div>
+    <div class="miniatures">
+        <img src="https://picsum.photos/id/236/60/60" alt="miniature chiot"
+        @click="displayedImage = 'https://picsum.photos/id/236/400/300'">
+        <img src="https://picsum.photos/id/237/60/60" alt="miniature chiot"
+        @click="displayedImage = 'https://picsum.photos/id/237/400/300'">
+    </div>
 </body>
 </html>
