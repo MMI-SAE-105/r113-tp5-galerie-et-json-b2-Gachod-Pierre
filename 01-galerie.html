@@ -13,7 +13,9 @@
     <h1>Galerie</h1>
     <p>lorem⇥</p>
     <div class="overlay"
-    x-show="displayedImage">
+    x-show="displayedImage"
+    @click="displayedImage = null"
+    @keyup.escape.window="displayedImage = null">
         <figure><img :src="displayedImage" alt="image 237... un chiot"></figure>
     </div>
 </body>
