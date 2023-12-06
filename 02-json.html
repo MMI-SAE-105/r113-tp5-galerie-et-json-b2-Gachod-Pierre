@@ -27,6 +27,12 @@
         }
 ]
 }'>
+        <template x-for="donnée in données">
+            <li>
+                <span x-text="donnée.nom">nom</span> travail sur un projet avec :
+                <a :href="donnée.url" x-text="donnée.projet"></a>
+            </li>
+        </template>
     </ul>
 </body>
 </html>
