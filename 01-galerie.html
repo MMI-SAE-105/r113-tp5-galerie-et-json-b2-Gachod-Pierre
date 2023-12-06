@@ -8,21 +8,57 @@
     <title>Galerie</title>
 </head>
 <body x-data="{
-    displayedImage: 'https://picsum.photos/id/237/400/300',
+    displayedImage: null,
 }">
     <h1>Galerie</h1>
-    <p>lorem⇥</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, architecto harum! Deleniti, maxime deserunt eius sapiente minima modi non suscipit assumenda, numquam, asperiores laborum accusamus voluptatem dolores distinctio quisquam soluta!</p>
     <div class="overlay"
     x-show="displayedImage"
     @click="displayedImage = null"
     @keyup.escape.window="displayedImage = null">
-        <figure><img :src="displayedImage" alt="image 237... un chiot"></figure>
+        <figure><img :src="displayedImage" alt="image affichée"></figure>
     </div>
     <div class="miniatures">
-        <img src="https://picsum.photos/id/236/60/60" alt="miniature chiot"
+        <img src="https://picsum.photos/id/236/100/100" alt="miniature"
         @click="displayedImage = 'https://picsum.photos/id/236/400/300'">
-        <img src="https://picsum.photos/id/237/60/60" alt="miniature chiot"
+        <img src="https://picsum.photos/id/237/100/100" alt="miniature"
         @click="displayedImage = 'https://picsum.photos/id/237/400/300'">
+        <img src="https://picsum.photos/id/238/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/238/400/300'">
+        <img src="https://picsum.photos/id/239/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/239/400/300'">
+        <img src="https://picsum.photos/id/240/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/240/400/300'">
+        <img src="https://picsum.photos/id/241/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/241/400/300'">
+        <img src="https://picsum.photos/id/242/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/242/400/300'">
+        <img src="https://picsum.photos/id/243/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/243/400/300'">
+        <img src="https://picsum.photos/id/244/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/244/400/300'">
+        <img src="https://picsum.photos/id/247/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/247/400/300'">
+        <img src="https://picsum.photos/id/236/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/236/400/300'">
+        <img src="https://picsum.photos/id/237/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/237/400/300'">
+        <img src="https://picsum.photos/id/238/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/238/400/300'">
+        <img src="https://picsum.photos/id/239/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/239/400/300'">
+        <img src="https://picsum.photos/id/240/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/240/400/300'">
+        <img src="https://picsum.photos/id/241/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/241/400/300'">
+        <img src="https://picsum.photos/id/242/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/242/400/300'">
+        <img src="https://picsum.photos/id/243/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/243/400/300'">
+        <img src="https://picsum.photos/id/244/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/244/400/300'">
+        <img src="https://picsum.photos/id/247/100/100" alt="miniature"
+        @click="displayedImage = 'https://picsum.photos/id/247/400/300'">
     </div>
 </body>
 </html>
